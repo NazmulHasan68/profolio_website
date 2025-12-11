@@ -116,7 +116,7 @@ export function Experience() {
             },
             {
               name: "BASIS Student Forum",
-              role: "Campus Member"
+              role: "Campus Member "
             },
             {
               name: "Okotan Organization",
