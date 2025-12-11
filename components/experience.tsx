@@ -115,7 +115,7 @@ export function Experience() {
               role: "Active Member"
             },
             {
-              name: "BASIS Student Forum",
+              name: "BASIS Student Forum ",
               role: "Campus Member "
             },
             {
