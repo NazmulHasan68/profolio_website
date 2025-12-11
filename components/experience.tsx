@@ -124,7 +124,7 @@ export function Experience() {
             },
             {
               name: "Krishnochora Sangothon",
-              role: "Sports & Environmental Activities"
+              role: "Sports & Environmental Activities "
             }
 
             ].map((org) => (
