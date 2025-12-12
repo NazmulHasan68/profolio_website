@@ -7,7 +7,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card } from "@/components/ui/card"
-import { Mail, Linkedin, Github, Twitter } from "lucide-react"
+import { Mail, Linkedin, Github, Twitter, Facebook } from "lucide-react"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -37,10 +37,10 @@ export function Contact() {
   }
 
   const socialLinks = [
-    { icon: Github, label: "GitHub", href: "#", color: "hover:text-primary" },
+    { icon: Github, label: "GitHub", href: "https://github.com/nazmulhasan68", color: "hover:text-primary" },
     { icon: Linkedin, label: "LinkedIn", href: "#", color: "hover:text-primary" },
-    { icon: Twitter, label: "Twitter", href: "#", color: "hover:text-primary" },
-    { icon: Mail, label: "Email", href: "mailto:nazmul@example.com", color: "hover:text-accent" },
+    { icon: Facebook, label: "Facebook", href: "https://www.facebook.com/pacific.nazmul.hasan.2024/#", color: "hover:text-primary" },
+    { icon: Mail, label: "Email", href: "mailto:n47712338@gmail.com", color: "hover:text-accent" },
   ]
 
   return (
@@ -141,8 +141,8 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <a href="mailto:nazmul@example.com" className="text-primary hover:underline">
-                    nazmul@example.com
+                  <a href="mailto:n47712338@gmail.com" className="text-primary hover:underline">
+                    n47712338@gmail.com
                   </a>
                 </div>
               </div>
@@ -152,9 +152,9 @@ export function Contact() {
                   <Linkedin className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">LinkedIn</h4>
-                  <a href="#" className="text-accent hover:underline">
-                    linkedin.com/in/nazmul
+                  <h4 className="font-semibold text-foreground">Instragram</h4>
+                  <a href="https://www.instagram.com/nazmulhasan.68" className="text-accent hover:underline">
+                    https://www.instagram.com/nazmulhasan.68
                   </a>
                 </div>
               </div>

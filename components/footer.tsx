@@ -7,7 +7,7 @@ export function Footer() {
 
   const footerLinks = [
     { label: "LinkedIn", href: "#" },
-    { label: "GitHub", href: "github.com/nazmulhasan68" },
+    { label: "GitHub", href: "https://github.com/nazmulhasan68" },
     { label: "Facebook", href: "https://www.facebook.com/pacific.nazmul.hasan.2024/" },
     { label: "Email", href: "mailto:n47712338@gmail.com" },
     { label: "Facebook page", href: "https://www.facebook.com/profile.php?id=61565555141698" },
