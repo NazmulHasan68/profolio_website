@@ -78,7 +78,7 @@ export function About() {
                 ))}
               </div>
 
-              <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">Programing Languages</p>
+              <p className="text-sm text-muted-foreground uppercase tracking-wider mt-4 mb-2">Programing Languages</p>
               <div className="flex flex-wrap gap-2">
                 {["Javascript", "Typescript", "Java", "C", "C++"].map((lang) => (
                   <Badge key={lang} variant="outline">

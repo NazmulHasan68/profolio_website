@@ -21,46 +21,61 @@ export function Hero() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8,  ease:easeInOut },
+      transition: { duration: 0.9, ease: easeInOut },
     },
   }
 
   return (
-    <section className="min-h-screen flex items-center pt-20 px-4">
+    <section className="min-h-screen flex items-center pt-24 px-6">
       <motion.div
-        className="max-w-6xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center"
+        className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
         {/* Left Content */}
         <motion.div className="space-y-6" variants={itemVariants}>
-          <motion.div variants={itemVariants}>
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider">Welcome to my portfolio</p>
-            <h1 className="text-5xl md:text-6xl font-bold mt-2 text-balance">Nazmul Hasan</h1>
-            <p className="text-2xl text-muted-foreground mt-2">Full Stack Developer & Student Leader</p>
+          <motion.div variants={itemVariants} className="space-y-3">
+            <p className="text-accent font-semibold text-sm uppercase mt-1 sm:mt-0 tracking-wider">
+              Welcome to my portfolio
+            </p>
+
+            
+            <motion.h1
+              className="text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight bg-linear-to-r from-primary to-accent bg-clip-text text-transparent"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
+              Nazmul Hasan
+            </motion.h1>
+
+            <p className="text-md sm:text-lg text-muted-foreground">
+              Full Stack Developer & Student Leader
+            </p>
           </motion.div>
 
           <motion.p
-            className="text-lg text-foreground/80 leading-relaxed max-w-xl text-balance"
             variants={itemVariants}
+            className="text-sm text-foreground/80 leading-relaxed max-w-lg"
           >
-            I'm passionate about creating modern web experiences, problem-solving, and leadership. Experienced in MERN
-            stack, cloud infrastructure, and real-time applications.
+            I’m passionate about building modern web experiences, solving complex problems, 
+            and leading initiatives.
           </motion.p>
 
-          <motion.div className="flex gap-4 pt-4" variants={itemVariants}>
-            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
+          {/* Buttons */}
+          <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-2">
+            <Button asChild className="gap-2 bg-primary hover:bg-primary/90 text-primary-foreground">
               <a href="#contact">
                 Get in Touch
                 <ArrowRight className="w-4 h-4" />
               </a>
             </Button>
+
             <Button
               variant="outline"
-              className="gap-2 bg-transparent"
+              className="gap-2 bg-background/40 backdrop-blur-sm border-border hover:bg-background/60"
               onClick={() => {
-                // Trigger CV download
                 const link = document.createElement("a")
                 link.href = "/resume.pdf"
                 link.download = "Nazmul_Hasan_Resume.pdf"
@@ -74,14 +89,23 @@ export function Hero() {
         </motion.div>
 
         {/* Right - Profile Image */}
-        <motion.div className="relative aspect-square" variants={itemVariants}>
-          <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-accent/20 rounded-2xl blur-3xl" />
-          <img
+        <motion.div
+          variants={itemVariants}
+          className="relative w-full max-w-sm mx-auto"
+        >
+          {/* Background Square */}
+          <div className=" absolute inset-0   bg-primary/10 rounded-xl  -rotate-6 scale-105  border border-primary/30 " />
+
+          {/* Layer 2 Behind */}
+          <div className="absolute inset-0 bg-accent/10 rounded-xl rotate-6 scale-110 border border-accent/30" />
+
+          {/* Profile Image */}
+          <motion.img whileHover={{ scale: 1.03 }}  transition={{ duration: 0.3 }}
             src="/nazmul.png"
             alt="Nazmul Hasan"
-            className="relative w-full h-full object-cover rounded-2xl border border-border shadow-2xl"
+            className=" relative z-10    w-full h-full   object-cover   rounded-xl   border border-border   shadow-xl  "
           />
-        </motion.div>
+          </motion.div>
       </motion.div>
     </section>
   )

@@ -41,9 +41,13 @@ const skillCategories = [
       "MongoDB",
       "PostgreSQL",
       "Neon DB",
-      "Prisma",
       "Drizzle ORM",
-      "MERN Stack"
+      "Better auth",
+      "Next auth",
+      "OAuth",
+      "jwt",
+      "cloudinary",
+      "gen ai"
     ],
     color: "from-purple-500 to-pink-500",
   },

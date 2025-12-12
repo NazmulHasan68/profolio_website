@@ -15,7 +15,7 @@ export function Projects() {
       image: "/project-ecommerce.jpg",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "Socket.IO"],
       link: "#",
-      github: "#",
+      github: "https://github.com/NazmulHasan68",
     },
     {
       title: "Real-time Chat Application",
@@ -24,7 +24,7 @@ export function Projects() {
       image: "/project-chat.jpg",
       technologies: ["Next.js", "WebSocket", "PostgreSQL", "Redis", "TypeScript"],
       link: "#",
-      github: "#",
+      github: "https://github.com/NazmulHasan68",
     },
     {
       title: "Analytics Dashboard",
@@ -33,7 +33,7 @@ export function Projects() {
       image: "/project-analytics.jpg",
       technologies: ["React", "Chart.js", "Express", "MongoDB", "Docker"],
       link: "#",
-      github: "#",
+      github: "https://github.com/NazmulHasan68",
     },
     {
       title: "Task Management System",
@@ -41,7 +41,7 @@ export function Projects() {
       image: "/project-tasks.jpg",
       technologies: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "TailwindCSS"],
       link: "#",
-      github: "#",
+      github: "https://github.com/NazmulHasan68",
     },
     {
       title: "Content Management System",
@@ -49,7 +49,7 @@ export function Projects() {
       image: "/project-cms.jpg",
       technologies: ["Node.js", "Express", "MongoDB", "JWT", "Multer"],
       link: "#",
-      github: "#",
+      github: "https://github.com/NazmulHasan68",
     },
     {
       title: "Social Media Analytics",
@@ -57,7 +57,7 @@ export function Projects() {
       image: "/project-social.jpg",
       technologies: ["React", "Node.js", "PostgreSQL", "Puppeteer", "Recharts"],
       link: "#",
-      github: "#",
+      github: "https://github.com/NazmulHasan68",
     },
   ]
 
@@ -112,7 +112,7 @@ export function Projects() {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-linear-to-t from-background via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
 
                 <CardHeader className="pb-3">
@@ -153,3 +153,14 @@ export function Projects() {
     </section>
   )
 }
+
+
+//  1. Tree selling website : https://tree-website-orcin.vercel.app/
+//  2. University website : https://bangladesh-university.onrender.com
+//  3. BD educator : https://bdeducatorsbd.com/
+//  4. Medical website : https://hospitalweb-2kzj-git-main-nazmul-hasans-projects-6bbbdf9e.vercel.app/
+//  5. Journal : https://versityjournal.vercel.app
+//  6. Agency : https://wmzagency.com
+//  7. blog website : https://nextjs-blog-o5g3.vercel.app/
+//  8. Inventory management : https://invoice-system-red.vercel.app
+//  9. E-commarce website : https://shadow-shaop.vercel.app/

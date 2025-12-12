@@ -73,7 +73,7 @@ export function Achievements() {
             return (
               <motion.div key={`${achievement.title}-${index}`} variants={itemVariants}>
                 <Card className="h-full border border-border/50 hover:border-accent/50 transition-colors group overflow-hidden">
-                  <div className="h-1 bg-gradient-to-r from-primary to-accent" />
+                  <div className="h-1 bg-linear-to-r from-primary to-accent" />
                   <CardHeader>
                     <div className="flex items-start justify-between mb-2">
                       <div className="p-3 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
