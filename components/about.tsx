@@ -22,9 +22,9 @@ export function About() {
             </div>
 
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I'm a passionate CSE student at Bangladesh University, combining technical expertise with strong
-              leadership skills. I've anchored 3 major university programs and accumulated diverse teaching and
-              mentorship experience.
+              I'm a CSE student at Bangladesh University, passionate about building scalable, user-focused applications.
+              I work across full-stack development, cloud infrastructure, and real-time systems, combining strong technical 
+              skills with leadership and mentorship experience. 
             </p>
 
             <p className="text-lg text-foreground/80 leading-relaxed">
@@ -35,7 +35,7 @@ export function About() {
             <div className="pt-4">
               <h3 className="font-semibold text-foreground mb-3">Core Expertise</h3>
               <div className="flex flex-wrap gap-2">
-                {["React", "Next.js", "Node.js", "MongoDB", "PostgreSQL", "TypeScript", "Docker", "AWS"].map(
+                {["React", "Next.js", "Node.js","Expresss.js", "MongoDB", "PostgreSQL", "TypeScript", "Docker", "Git&Github"].map(
                   (skill) => (
                     <Badge key={skill} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
                       {skill}
@@ -69,9 +69,18 @@ export function About() {
             </div>
 
             <div className="bg-background/50 border border-border rounded-lg p-6">
-              <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">Languages</p>
+              <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">Human Languages</p>
               <div className="flex flex-wrap gap-2">
                 {["Bengali (Native)", "English", "Hindi"].map((lang) => (
+                  <Badge key={lang} variant="outline">
+                    {lang}
+                  </Badge>
+                ))}
+              </div>
+
+              <p className="text-sm text-muted-foreground uppercase tracking-wider mb-2">Programing Languages</p>
+              <div className="flex flex-wrap gap-2">
+                {["Javascript", "Typescript", "Java", "C", "C++"].map((lang) => (
                   <Badge key={lang} variant="outline">
                     {lang}
                   </Badge>
