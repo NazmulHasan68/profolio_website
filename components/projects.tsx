@@ -92,7 +92,7 @@ export function Projects() {
         >
           <h2 className="text-4xl font-bold mb-2">Featured Projects</h2>
           <div className="h-1 w-12 bg-accent rounded-full" />
-          <p className="text-foreground/70 mt-4">Explore some of my recent work and personal projects</p>
+          <p className="text-foreground/70 mt-4">Explore some of my recent work and personal projects </p>
         </motion.div>
 
         <motion.div
