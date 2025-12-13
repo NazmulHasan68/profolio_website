@@ -134,7 +134,7 @@ export function Projects() {
                     <Button asChild size="sm" variant="outline" className="flex-1 bg-transparent">
                       <a href={project.link} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="w-4 h-4 mr-1" />
-                        View
+                        View 
                       </a>
                     </Button>
                     <Button asChild size="sm" variant="outline" className="flex-1 bg-transparent">
